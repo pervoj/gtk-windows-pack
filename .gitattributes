@@ -1,0 +1,2 @@
+gtk-3.0/out/*.exe filter=lfs diff=lfs merge=lfs -text
+gtk-2.0/out/*.exe filter=lfs diff=lfs merge=lfs -text
