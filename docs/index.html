@@ -1,0 +1,82 @@
+---
+layout: default
+title: Home
+container: false
+---
+
+{% include topbanner.html %}
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-lg-9">
+            <h4>What is GTK Windows pack?</h4>
+            <p>GTK Windows pack is package of GTK runtime libraries. If you are developing application, which uses GTK, you can
+                use this package instead of packaging GTK on your own. This is not development library, this is just runtime.</p>
+            <p>GTK is downloaded from MSYS2.</p>
+
+            <h4>What is GTK?</h4>
+            <p>GTK is free and open source cross platform widget toolkit for creating graphical user interfaces. GTK is
+                maintained by the GNOME Foundation.</p>
+        </div>
+        <div class="col-lg-3"><img class="w-100" src="/assets/images/logos/gtk-windows-pack.svg"></div>
+    </div>
+
+    <h4>Included GTK themes</h4>
+    <p>GTK Windows pack includes these GTK themes:</p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Theme name</th>
+                <th>GTK 2.0</th>
+                <th>GTK 3.0</th>
+                <th>GTK 4.0</th>
+                <th></th>
+            </tr>
+        </thead>
+        <!-- ✓ ✗ -->
+        <tbody>
+            <tr>
+                <th>Adwaita Light</th>
+                <td class="text-success">✓ yes</td>
+                <td class="text-success">✓ yes</td>
+                <td class="text-success">✓ yes</td>
+                <td><a href="https://gitlab.gnome.org/GNOME/gtk/-/tree/master/gtk/theme/Default" data-bs-toggle="tooltip" data-bs-placement="left" title="GitLab"><span class="fab fa-gitlab"></span></a></td>
+            </tr>
+            <tr>
+                <th>Adwaita Dark</th>
+                <td class="text-danger">✗ no</td>
+                <td class="text-success">✓ yes</td>
+                <td class="text-success">✓ yes</td>
+                <td><a href="https://gitlab.gnome.org/GNOME/gtk/-/tree/master/gtk/theme/Default" data-bs-toggle="tooltip" data-bs-placement="left" title="GitLab"><span class="fab fa-gitlab"></span></a></td>
+            </tr>
+            <tr>
+                <th>Windows 10 Light</th>
+                <td class="text-success">✓ yes</td>
+                <td class="text-success">✓ yes</td>
+                <td class="text-danger">✗ no</td>
+                <td><a href="https://github.com/B00merang-Project/Windows-10" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"><span class="fab fa-github"></span></a></td>
+            </tr>
+            <tr>
+                <th>Windows 10 Dark</th>
+                <td class="text-success">✓ yes</td>
+                <td class="text-success">✓ yes</td>
+                <td class="text-danger">✗ no</td>
+                <td><a href="https://github.com/B00merang-Project/Windows-10-Dark" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"><span class="fab fa-github"></span></a></td>
+            </tr>
+            <tr>
+                <th>Pop Light</th>
+                <td class="text-success">✓ yes</td>
+                <td class="text-success">✓ yes</td>
+                <td class="text-danger">✗ no</td>
+                <td><a href="https://github.com/pop-os/gtk-theme" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"><span class="fab fa-github"></span></a></td>
+            </tr>
+            <tr>
+                <th>Pop Dark</th>
+                <td class="text-danger">✗ no</td>
+                <td class="text-success">✓ yes</td>
+                <td class="text-danger">✗ no</td>
+                <td><a href="https://github.com/pop-os/gtk-theme" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"><span class="fab fa-github"></span></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
