@@ -1,0 +1,21 @@
+[X-GNOME-Metatheme]
+Name=Pop
+Type=X-GNOME-Metatheme
+Comment=The Pop GTK Theme
+Encoding=UTF-8
+GtkTheme=Pop
+IconTheme=Pop
+CursorTheme=Pop
+CursorSize=24
+
+# GTK Windows pack – theme informations
+#   Name:
+#     - Pop
+#   Description:
+#     - GTK+ theme for Pop!_OS
+#   URL:
+#     - https://github.com/pop-os/gtk-theme
+#   Versions:
+#     - GTK 4.0 theme: not yet released
+#     - GTK 3.0 theme: downloaded from Pop!_OS GitHub (release 5.3.1)
+#     - GTK 2.0 theme: also downloaded from Pop!_OS GitHub (release 5.3.1)

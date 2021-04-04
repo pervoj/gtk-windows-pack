@@ -1,0 +1,24 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Windows 10
+Comment=Windows 10 UI for Linux OSes
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Windows 10
+MetacityTheme=Windows 10
+IconTheme=Windows 10
+CursorTheme=DMZ-White
+ButtonLayout=menu:minimize,maximize,close
+
+# GTK Windows pack – theme informations
+#   Name:
+#     - Windows 10
+#   Description:
+#     - Windows 10 Light theme for GTK
+#   URL:
+#     - https://b00merang.weebly.com/windows-10.html
+#   Versions:
+#     - GTK 4.0 theme: not yet released
+#     - GTK 3.0 theme: downloaded from B00merang Project GitHub (release 3.2)
+#     - GTK 2.0 theme: also downloaded from B00merang Project GitHub (release 3.2)
