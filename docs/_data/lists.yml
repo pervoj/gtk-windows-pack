@@ -1,0 +1,50 @@
+gtk:
+  - name: GTK 2.0
+    latest: 1.0.0
+    link: https://github.com/pervoj/gtk-windows-pack/raw/master/gtk-2.0/out/gtk-2.0-1.0.0.exe
+    badge: assets/images/badges/gtk2-badge.svg
+  - name: GTK 3.0
+    latest: 1.0.0
+    link: https://github.com/pervoj/gtk-windows-pack/raw/master/gtk-3.0/out/gtk-3.0-1.0.0.exe
+    badge: assets/images/badges/gtk3-badge.svg
+
+themes:
+  - name: Windows 10
+    link: https://b00merang.weebly.com/windows-10.html
+    variants:
+      - name: Light
+        gtk:
+          - support: true
+          - support: true
+        image: assets/images/themes/win10-light.png
+      - name: Dark
+        gtk:
+          - support: true
+          - support: true
+        image: assets/images/themes/win10-dark.png
+  - name: Adwaita
+    link: https://gitlab.gnome.org/GNOME/gtk/-/tree/master/gtk/theme/Default
+    variants:
+      - name: Light
+        gtk:
+          - support: true
+          - support: true
+        image: assets/images/themes/adwaita-light.png
+      - name: Dark
+        gtk:
+          - support: false
+          - support: true
+        image: assets/images/themes/adwaita-dark.png
+  - name: Pop
+    link: https://github.com/pop-os/gtk-theme
+    variants:
+      - name: Light
+        gtk:
+          - support: true
+          - support: true
+        image: assets/images/themes/pop-light.png
+      - name: Dark
+        gtk:
+          - support: false
+          - support: true
+        image: assets/images/themes/pop-dark.png

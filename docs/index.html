@@ -11,68 +11,69 @@ container: false
         GTK 4.0 support is coming soon... &#128578;
     </div>
     <div class="row g-4">
-        <div class="col-lg-9">
-            <h4>What is GTK Windows pack?</h4>
+        <div class="col-md-9">
+            <h3>What is GTK Windows pack?</h3>
             <p>GTK Windows pack is package of GTK runtime libraries. If you are developing application, which uses GTK, you can
                 use this package instead of packaging GTK on your own. This is not development library, this is just runtime.</p>
             <p>GTK is downloaded from MSYS2.</p>
 
-            <h4>What is GTK?</h4>
+            <h3>What is GTK?</h3>
             <p>GTK is free and open source cross platform widget toolkit for creating graphical user interfaces. GTK is
                 maintained by the GNOME Foundation.</p>
         </div>
-        <div class="col-lg-3"><img class="w-100" src="assets/images/logos/gtk-windows-pack.svg"></div>
+        <div class="col-md-3"><img class="w-100" src="assets/images/logos/gtk-windows-pack.svg"></div>
     </div>
 
-    <h4>Included GTK themes</h4>
+    <h3>Included GTK themes</h3>
     <p>GTK Windows pack includes these GTK themes:</p>
+    <ul>
+        {% for theme in site.data.lists.themes %}
+            <li><a href="{{ theme.link }}">{{ theme.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <h4>Theme support in each GTK version</h4>
     <table class="table table-striped">
         <thead>
             <tr>
                 <th>Theme name</th>
-                <th>GTK 2.0</th>
-                <th>GTK 3.0</th>
-                <th></th>
+                {% for gtk in site.data.lists.gtk %}
+                    <th>{{ gtk.name }}</th>
+                {% endfor %}
             </tr>
         </thead>
         <!-- ✓ ✗ -->
         <tbody>
-            <tr>
-                <th>Adwaita Light</th>
-                <td class="text-success">✓ yes</td>
-                <td class="text-success">✓ yes</td>
-                <td><a href="https://gitlab.gnome.org/GNOME/gtk/-/tree/master/gtk/theme/Default" data-bs-toggle="tooltip" data-bs-placement="left" title="GitLab"><span class="fab fa-gitlab"></span></a></td>
-            </tr>
-            <tr>
-                <th>Adwaita Dark</th>
-                <td class="text-danger">✗ no</td>
-                <td class="text-success">✓ yes</td>
-                <td><a href="https://gitlab.gnome.org/GNOME/gtk/-/tree/master/gtk/theme/Default" data-bs-toggle="tooltip" data-bs-placement="left" title="GitLab"><span class="fab fa-gitlab"></span></a></td>
-            </tr>
-            <tr>
-                <th>Windows 10 Light</th>
-                <td class="text-success">✓ yes</td>
-                <td class="text-success">✓ yes</td>
-                <td><a href="https://github.com/B00merang-Project/Windows-10" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"><span class="fab fa-github"></span></a></td>
-            </tr>
-            <tr>
-                <th>Windows 10 Dark</th>
-                <td class="text-success">✓ yes</td>
-                <td class="text-success">✓ yes</td>
-                <td><a href="https://github.com/B00merang-Project/Windows-10-Dark" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"><span class="fab fa-github"></span></a></td>
-            </tr>
-            <tr>
-                <th>Pop Light</th>
-                <td class="text-success">✓ yes</td>
-                <td class="text-success">✓ yes</td>
-                <td><a href="https://github.com/pop-os/gtk-theme" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"><span class="fab fa-github"></span></a></td>
-            </tr>
-            <tr>
-                <th>Pop Dark</th>
-                <td class="text-danger">✗ no</td>
-                <td class="text-success">✓ yes</td>
-                <td><a href="https://github.com/pop-os/gtk-theme" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"><span class="fab fa-github"></span></a></td>
-            </tr>
+            {% for theme in site.data.lists.themes %}
+                {% for variant in theme.variants %}
+                    <tr>
+                        <th>{{ theme.name }} {{ variant.name }}</th>
+                        {% for gtk in variant.gtk %}
+                            {% if gtk.support %}
+                                <td class="text-success">✓ yes</td>
+                            {% else %}
+                                <td class="text-danger">✗ no</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            {% endfor %}
         </tbody>
     </table>
+
+    <h4>Theme previews</h4>
+    <div class="row g-2 pt-2 text-center">
+        {% for theme in site.data.lists.themes %}
+            {% for variant in theme.variants %}
+                <div class="col">
+                    <a href="{{ variant.image }}" data-lightbox="previews" data-title="{{ theme.name }} {{ variant.name }}">
+                        <div class="gallery-image">
+                            <img height="150px" src="{{ variant.image }}">
+                            <span class="gallery-image-title">{{ theme.name }} {{ variant.name }}</span>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
 </div>
