@@ -30,8 +30,8 @@ body {
 }
 
 .gtk-badge:hover {
-    transform: scale(1.1);
     z-index: 10;
+    transform: scale(1.1);
 }
 
 a.social-link {
@@ -46,12 +46,17 @@ a.social-link:hover {
 
 .gallery-image {
     display: inline-block;
-    border: 1px solid #888a85;
-    border-radius: 3px;
+    border: 2px solid #888a85;
+    border-radius: 5px;
     padding: 5px;
-    box-shadow: 3px 3px 6px #999999;
     position: relative;
     background-color: white;
+    transition: all .2s ease-in-out;
+}
+
+.gallery-image:hover {
+    z-index: 10;
+    transform: scale(1.1);
 }
 
 .gallery-image img {

@@ -17,11 +17,13 @@ themes:
           - support: true
           - support: true
         image: assets/images/themes/win10-light.png
+        preview: assets/images/themes/win10-light-preview.png
       - name: Dark
         gtk:
           - support: true
           - support: true
         image: assets/images/themes/win10-dark.png
+        preview: assets/images/themes/win10-dark-preview.png
   - name: Adwaita
     link: https://gitlab.gnome.org/GNOME/gtk/-/tree/master/gtk/theme/Default
     variants:
@@ -30,11 +32,13 @@ themes:
           - support: true
           - support: true
         image: assets/images/themes/adwaita-light.png
+        preview: assets/images/themes/adwaita-light-preview.png
       - name: Dark
         gtk:
           - support: false
           - support: true
         image: assets/images/themes/adwaita-dark.png
+        preview: assets/images/themes/adwaita-dark-preview.png
   - name: Pop
     link: https://github.com/pop-os/gtk-theme
     variants:
@@ -43,8 +47,10 @@ themes:
           - support: true
           - support: true
         image: assets/images/themes/pop-light.png
+        preview: assets/images/themes/pop-light-preview.png
       - name: Dark
         gtk:
           - support: false
           - support: true
         image: assets/images/themes/pop-dark.png
+        preview: assets/images/themes/pop-dark-preview.png
