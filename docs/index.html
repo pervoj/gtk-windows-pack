@@ -76,4 +76,10 @@ container: false
             {% endfor %}
         {% endfor %}
     </div>
+
+    <hr>
+    <img src="https://img.shields.io/badge/GTK%20Windows%20pack%20version-{{ site.data.lists.pack.version }}-blue" alt="GTK Windows pack version: {{ site.data.lists.pack.version }}">
+    {% for gtk in site.data.lists.gtk %}
+        <img src="https://img.shields.io/badge/{{ gtk.name }}%20pack%20version-{{ gtk.latest }}-{{ gtk.shield }}" alt="{{ gtk.name }} pack version: {{ gtk.latest }}">
+    {% endfor %}
 </div>

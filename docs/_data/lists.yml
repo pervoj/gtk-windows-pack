@@ -1,11 +1,16 @@
+pack:
+  version: 1.0.0
+
 gtk:
   - name: GTK 2.0
+    shield: red
     latest: 1.0.0
-    link: https://github.com/pervoj/gtk-windows-pack/raw/master/gtk-2.0/out/gtk-2.0-1.0.0.exe
+    link: https://github.com/pervoj/gtk-windows-pack/releases/download/v1.0.0/gtk-2.0-1.0.0.exe
     badge: assets/images/badges/gtk2-badge.svg
   - name: GTK 3.0
+    shield: yellow
     latest: 1.0.0
-    link: https://github.com/pervoj/gtk-windows-pack/raw/master/gtk-3.0/out/gtk-3.0-1.0.0.exe
+    link: https://github.com/pervoj/gtk-windows-pack/releases/download/v1.0.0/gtk-3.0-1.0.0.exe
     badge: assets/images/badges/gtk3-badge.svg
 
 themes:
