@@ -1,3 +1,12 @@
+<table align="center"><tr><td>
+  <h2 align="center">⚠️&ensp;WARNING&ensp;⚠️</h2>
+  <h3 align="center">This project is no longer maintained!</h3>
+  <p>I have decided to end the project for the time being to work on other projects. However, the project is still usable, I just won't be developing it anymore.</p>
+  <p>When there is time, I may return to the project, for now the repository is archived.</p>
+</td></tr></table>
+
+
+
 # GTK Windows pack
 
 Many applications use the GTK library to run in the graphical user interface and require it to own running. This project helps GTK application developers with packaging and distributing GTK libraries, and GTK application users to conveniently install them. The package also includes several GTK themes, from which you can select the main one during installation.
